@@ -1,0 +1,33 @@
+.footer{
+  background-color: var(--text_color);
+  padding-top: 3.8rem;
+  padding-bottom: 4.3rem;
+  font-size: 1.6rem;
+  line-height: 1.25;
+  color: var(--light_color);
+  &__wrap{
+    @extend .flex-aic-jcsb;
+  }
+  &__copy{
+    max-width: 49.5rem;
+  }
+  &__info-box{
+    margin-bottom: 1.7rem;
+  }
+  &__info-box a{
+    display: inline;
+  }
+  &__info-box a + a{
+    margin-left: 3.4rem;
+ }
+  &__link{
+    display: block;
+    transition: color .2s linear;
+    &:hover{
+      color: var(--accent_color);
+    }
+  }
+  a + a{
+    margin-top: 1.7rem;
+  }
+}

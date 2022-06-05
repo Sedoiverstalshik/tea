@@ -1,0 +1,44 @@
+.news-page{
+  padding-top: 3rem;
+  padding-bottom: 2.5rem;
+  &__item{
+    position: relative;
+    margin-bottom: 5.3rem;
+  }
+  &__content{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--bg-50_color);
+    border-radius: 3.5rem;
+    max-width: 54rem;
+    width: 100%;
+    height: 100%;
+    @extend .flex-aic-jcc;
+  }
+  &__content-title{
+    font-size: 2.4rem;
+    line-height: 1.08;
+    max-width: 30rem;
+  }
+  &__desc{
+    line-height: 1.62;
+    margin-bottom: 2rem;
+  }
+  &__title{
+    font-size: 2.4rem;
+    line-height:1.08;
+    color: var(--accent_color);
+    margin-bottom: 2rem;
+  }
+  &__list{
+    padding-left: 2.5rem;
+  }
+  &__list li{
+    list-style: decimal;
+    font-family: 'Roboto';
+    line-height:1.62;
+    color: var(--accent_color);
+    margin-bottom: 2rem;
+  }
+}

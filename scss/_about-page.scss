@@ -1,0 +1,15 @@
+.about{
+  padding: 2.5rem 0;
+  &__img{
+    float: right;
+    margin-top: -5rem;
+  }
+  &__title{
+    margin-bottom: 2rem;
+    text-align-last: left;
+  }
+  &__desc{
+    line-height:1.62;
+    margin-bottom: 2rem;
+  }
+}

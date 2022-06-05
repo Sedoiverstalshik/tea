@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Roboto:wght@400;500&display=swap');
+@import '_root';
+*,*::before,*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+p{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+ul,ol,li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+}
+img{
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+input,textarea{
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  transition: box-shadow .2s linear;
+  &:hover{
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.25);
+  }
+}
+.container{
+  max-width: 109rem;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+html{
+  font-size: 10px;
+}
+body{
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: var(--text_color);
+}
+.title{
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.09;
+  text-align: center;
+  color: var(--text_color);
+}
+.accent__title{
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.09;
+  text-align: center;
+  color: var(--accent_color);
+}
+.btn{
+  font-family: 'Roboto';
+  color: var(--text_color);
+  background: var(--bg-btn_color);
+  border: 1px solid #F7EAE8;
+  border-radius: 3.5rem;
+  transition: color .2s linear, background-color .2s linear;
+  &:hover{
+    color: var(--light_color);
+    background-color:var(--accent_color) ;
+  }
+}
+
+// extend
+.flex-aic-jcsb{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-aic-jcc{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-ais-jcsb{
+  display: flex;
+  align-items:flex-start;
+  justify-content: space-between;
+}
+.flex-aic{
+  display: flex;
+  align-items: center;
+}
+.flex-jcc{
+  display: flex;
+  justify-content: center;
+}
+.flex-column-jcsb{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+}
+.flex-wrap{
+  display: flex;
+  flex-wrap: wrap
+}
+
+@import '_header';
+@import '_hero';
+@import '_category';
+@import '_news';
+@import '_footer';
+@import '_feedback-page';
+@import '_about-page';
+@import '_category-page';
+@import '_news-page';
+

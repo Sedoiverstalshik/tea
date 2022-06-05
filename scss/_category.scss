@@ -1,0 +1,39 @@
+.category{
+  padding-top: 1.5rem;
+  margin-bottom: 1rem;
+  &__title{
+    margin-bottom: 2.5rem;
+  }
+  &__list{
+    @extend .flex-aic-jcsb;
+  }
+  &__item{
+    height: 26.5rem;
+    transition: transform .2s linear;
+    &:hover{
+      transform: translateY(-1rem);
+    }
+  }
+  &__item a{
+    height: 100%;
+    width: 100%;
+  }
+  &__item-title{
+    font-weight: 800;
+    font-size: 1.4rem;
+    line-height: 1.43;
+    color: var(--text-accent_color);
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  &__item-bg{
+    margin: 0 auto;
+    border-radius: 3.5rem;
+    max-width: 12.5rem;
+    height: 20rem;
+  }
+  &__item-img{
+    position: relative;
+    bottom: 125px;
+  }
+}
