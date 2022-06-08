@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+.none{
+  display: none;
+}
 h1,h2,h3,h4,h5,h6{
   margin: 0;
   padding: 0;
@@ -83,6 +86,7 @@ body{
   }
 }
 
+
 // extend
 .flex-aic-jcsb{
   display: flex;
@@ -99,6 +103,11 @@ body{
   align-items:flex-start;
   justify-content: space-between;
 }
+// .flex-aic-start{
+//   display: flex;
+//   align-items:center;
+//   justify-content: flex-start;
+// }
 .flex-aic{
   display: flex;
   align-items: center;
@@ -112,9 +121,11 @@ body{
   flex-direction: column;
   justify-content:space-between;
 }
-.flex-wrap{
+.flex-wrap-center-center{
   display: flex;
-  flex-wrap: wrap
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content: center;
 }
 
 @import '_header';

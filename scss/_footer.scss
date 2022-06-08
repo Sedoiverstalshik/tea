@@ -7,6 +7,7 @@
   color: var(--light_color);
   &__wrap{
     @extend .flex-aic-jcsb;
+    gap: 1.5rem;
   }
   &__copy{
     max-width: 49.5rem;
@@ -29,5 +30,30 @@
   }
   a + a{
     margin-top: 1.7rem;
+  }
+}
+@media(max-width:850px){
+  .footer{
+    &__wrap{
+      flex-wrap: wrap;
+    }
+    &__copy{
+      margin: 0 auto;
+    }
+    &__info{
+      margin: 0 auto;
+    }
+  }
+}
+@media(max-width:576px){
+  .footer{
+    font-size: 1.2rem;
+    line-height: 1.67;
+    &__info{
+      margin: 0 auto;
+    }
+    &__link{
+      text-align: center;
+    }
   }
 }

@@ -32,6 +32,7 @@
       line-height: 1.08;
       color: var(--text_color);
       transition: color .2s linear;
+      text-align: left;
     }
     &:hover .slide__title,&:hover .slide__title-wrap{
       background-color:var(--accent_color) ;
@@ -57,4 +58,40 @@
 }
 .hero__swiper-pagination .swiper-pagination-bullet-active{
   background-color: #678C3B;
+}
+
+@media(max-width:768px){
+  .hero{
+    &__swiper-slide{
+      width: 35rem;
+      height: 35rem;
+    }
+    .slide__title-wrap{
+      max-width: 28rem;
+      height: 7rem;
+      padding: 1rem;
+    }
+    .slide__title{
+      font-size: 2rem;
+      line-height: 1;
+    }
+  }
+}
+@media(max-width:576px){
+  .hero{
+    &__swiper-slide{
+      width: 25.7rem;
+      height: 25.7rem;
+      margin: 0 1.3rem;
+    }
+    .slide__title-wrap{
+      max-width: 19.8rem;
+      height: 4.4rem;
+      padding: 1rem;
+    }
+    .slide__title{
+      font-size: 1.6rem;
+      line-height: 1;
+    }
+  }
 }

@@ -3,6 +3,7 @@
   margin-bottom: 2.5rem;
   &__wrap{
     @extend .flex-aic-jcsb;
+    flex-wrap: wrap;
   }
   &__logo{
     max-width: 18rem;
@@ -60,6 +61,50 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position:center center;
+    }
+  }
+  .burger__menu{
+    display: none;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    background-color: transparent;
+    margin-left: 7rem;
+    span{
+      display: block;
+      width: 3rem;
+      height: 0.4rem;
+      background-color: var(--text_color);
+      border-radius:2rem;
+    }
+    span + span{
+      margin-top: 0.7rem;
+    }
+  }
+}
+
+@media(max-width:1050px){
+  .header{
+    &__menu{
+      order: 1;
+      margin: 2rem auto;
+    }
+    &__search{
+      margin-left: 8rem;
+    }
+  }
+}
+@media(max-width:600px){
+  .header{
+    &__menu{
+      display: none;
+    }
+    .burger__menu{
+      display: block;
+    }
+    &__search{
+      order: 1;
+      margin: 2rem auto;
     }
   }
 }
