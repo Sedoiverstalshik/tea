@@ -8,6 +8,7 @@
   &__logo{
     max-width: 18rem;
     height: 5rem;
+    z-index: 3;
   }
   &__menu-list{
     @extend .flex-aic-jcsb;
@@ -70,6 +71,7 @@
     border: none;
     background-color: transparent;
     margin-left: 7rem;
+    z-index: 3;
     span{
       display: block;
       width: 3rem;
@@ -83,28 +85,52 @@
   }
 }
 
-@media(max-width:1050px){
-  .header{
-    &__menu{
-      order: 1;
-      margin: 2rem auto;
-    }
-    &__search{
-      margin-left: 8rem;
-    }
-  }
-}
+// @media(max-width:1050px){
+//   .header{
+//     &__menu{
+//       order: 1;
+//       margin: 2rem auto;
+//     }
+//     &__search{
+//       margin-left: 8rem;
+//     }
+//   }
+// }
 @media(max-width:600px){
   .header{
     &__menu{
       display: none;
     }
-    .burger__menu{
-      display: block;
-    }
-    &__search{
-      order: 1;
-      margin: 2rem auto;
+  }
+  .burger__menu{
+    display: block;
+  }
+  &__search{
+    order: 1;
+    margin: 2rem auto;
+  }
+  .header__menu.active{
+    display: flex;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--text_color);
+    width: 101%;
+    height: 100%;
+    z-index: 2;
+    padding-top: 3rem;
+  }
+  .header__menu.active a{
+    color: var(--light_color);
+  }
+  .header__menu.active .header__menu-list{
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 auto;
+    li + li{
+      margin-left: 0;
+      margin-top: 1rem;
     }
   }
 }

@@ -1,0 +1,25 @@
+@media(max-width:1050px){
+  .header{
+    &__menu{
+      order: 1;
+      margin: 2rem auto;
+    }
+    &__search{
+      margin-left: 8rem;
+    }
+  }
+}
+@media(max-width:600px){
+  .header{
+    &__menu{
+      display: none;
+    }
+    .burger__menu{
+      display: block;
+    }
+    &__search{
+      order: 1;
+      margin: 2rem auto;
+    }
+  }
+}

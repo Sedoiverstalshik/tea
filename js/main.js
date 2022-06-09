@@ -8,3 +8,13 @@ const swiper = new Swiper('.hero__swiper', {
     clickable: true,
   },
 });
+
+
+const burgerBtn = document.querySelector('.burger__menu')
+const menu = document.querySelector('.header__menu')
+
+console.log(burgerBtn);
+console.log(menu);
+burgerBtn.addEventListener('click', () => {
+  menu.classList.toggle('active')
+})

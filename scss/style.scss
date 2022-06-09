@@ -103,11 +103,11 @@ body{
   align-items:flex-start;
   justify-content: space-between;
 }
-// .flex-aic-start{
-//   display: flex;
-//   align-items:center;
-//   justify-content: flex-start;
-// }
+.flex-aic-start{
+  display: flex;
+  align-items:center;
+  justify-content: flex-start;
+}
 .flex-aic{
   display: flex;
   align-items: center;
@@ -137,4 +137,5 @@ body{
 @import '_about-page';
 @import '_category-page';
 @import '_news-page';
+@import '_media';
 
