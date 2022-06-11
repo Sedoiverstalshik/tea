@@ -43,19 +43,19 @@
       margin-top: 1rem;
     }
   }
-  // .burger__menu.active{
-  //   span:first-child{
-  //     position: relative;
-  //     transform: rotate(45deg);
-  //     top: 36%;
-  //   }
-  //   span:last-child{
-  //     position: relative;
-  //     transform: rotate(-45deg);
-  //     top: -36%;
-  //   }
-  //   span:nth-child(2){
-  //     opacity: 0;
-  //   }
-  // }
+  .burger__menu.active{
+    span:first-child{
+      position: relative;
+      transform: rotate(45deg);
+      top: 36%;
+    }
+    span:last-child{
+      position: relative;
+      transform: rotate(-45deg);
+      top: -36%;
+    }
+    span:nth-child(2){
+      opacity: 0;
+    }
+  }
 }
