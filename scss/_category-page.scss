@@ -63,6 +63,12 @@
       max-width: 50rem;
       max-height: 20rem;
     }
+    &__img{
+      max-width: 20rem;
+      max-height: 20rem;
+      left: 7rem;
+      bottom: 10rem;
+    }
     &__list{
       gap: 3rem 1rem;
     }
@@ -73,6 +79,8 @@
     &__img{
       max-width: 17.3rem;
       max-height: 17.3rem;
+      left: 0;
+      bottom: 6rem;
     }
   }
 }
