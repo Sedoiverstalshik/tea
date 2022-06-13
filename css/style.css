@@ -851,8 +851,8 @@ body {
 
 .category-page__img {
   position: absolute;
-  left: 6rem;
-  bottom: 6rem;
+  left: 0;
+  top: 50%;
 }
 
 .category-page__title {
@@ -912,8 +912,6 @@ body {
   .category-page__img {
     max-width: 20rem;
     max-height: 20rem;
-    left: 2rem;
-    bottom: 6rem;
   }
   .category-page__list {
     gap: 3rem 1rem;
