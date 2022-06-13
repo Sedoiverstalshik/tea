@@ -840,15 +840,18 @@ body {
   padding-bottom: 7.5rem;
 }
 
-.category-page__bg {
+.category-page__bg-wrap {
   position: relative;
+}
+
+.category-page__bg {
   margin-bottom: 5rem;
   border-radius: 3.5rem;
 }
 
 .category-page__img {
   position: absolute;
-  left: 13rem;
+  left: 6rem;
   bottom: 6rem;
 }
 
@@ -896,7 +899,6 @@ body {
     margin: 0 auto 4rem;
   }
   .category-page__img {
-    left: 0;
     max-width: 30rem;
     max-height: 30rem;
   }
@@ -910,7 +912,6 @@ body {
   .category-page__img {
     max-width: 20rem;
     max-height: 20rem;
-    bottom:24rem;
   }
   .category-page__list {
     gap: 3rem 1rem;

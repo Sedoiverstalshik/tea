@@ -1,14 +1,16 @@
 .category-page{
   padding-top: 3rem;
   padding-bottom: 7.5rem;
-  &__bg{
+  &__bg-wrap{
     position: relative;
+  }
+  &__bg{
     margin-bottom: 5rem;
     border-radius: 3.5rem;
   }
   &__img{
     position: absolute;
-    left: 13rem;
+    left: 6rem;
     bottom: 6rem;
   }
   &__title{
@@ -51,7 +53,7 @@
       margin: 0 auto 4rem;
     }
     &__img{
-      left: 0;
+      // left: 0;
       max-width: 30rem;
       max-height: 30rem;
     }
