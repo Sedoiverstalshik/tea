@@ -9,7 +9,7 @@
   &__img{
     position: absolute;
     left: 13rem;
-    bottom: 0;
+    bottom: 6rem;
   }
   &__title{
     margin-bottom: 2.5rem;
@@ -66,8 +66,8 @@
     &__img{
       max-width: 20rem;
       max-height: 20rem;
-      left: 7rem;
-      bottom: 10rem;
+      // left: 7rem;
+      // bottom: 10rem;
     }
     &__list{
       gap: 3rem 1rem;
@@ -79,8 +79,8 @@
     &__img{
       max-width: 17.3rem;
       max-height: 17.3rem;
-      left: 0;
-      bottom: 6rem;
+      // left: 0;
+      // bottom: 6rem;
     }
   }
 }
